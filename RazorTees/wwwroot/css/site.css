@@ -1,18 +1,44 @@
 a.navbar-brand {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF; 
     font-style: normal;
     font-weight: 500;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 68px;
 }
 
+.text-center {
+}
+
+.text-center p {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
+.text-center h1 {
+    margin: 5px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 116px;
+}
+
+
+
 .button-wrap .button {
     background: #0E5E6F;
-    padding: 50px;
-    font-family: 'Inter';
+    border-radius: 0px 0px 0px 50px;
+    padding: 5px 20px 5px 30px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
     font-style: normal;
-    font-weight: 500;
-    font-size: 56px;
+    width: 278px;
+    font-weight: 600;
+    font-size: 32px;
     color: #FFFFFF;
     line-height: 68px;
     border: none;
