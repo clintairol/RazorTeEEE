@@ -1,5 +1,25 @@
+a.navbar-brand {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+.button-wrap .button {
+    background: #0E5E6F;
+    padding: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    color: #FFFFFF;
+    line-height: 68px;
+    border: none;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
