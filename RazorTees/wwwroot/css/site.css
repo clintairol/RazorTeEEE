@@ -8,6 +8,10 @@ a.navbar-brand {
 }
 
 .text-center {
+    position: absolute;
+    left: 81px;
+    top: 335px;
+    justify-content: left;
 }
 
 .text-center p {
@@ -18,13 +22,14 @@ a.navbar-brand {
     font-size: 32px;
     line-height: 39px;
 }
+
+
 .text-center h1 {
-    margin: 5px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 66px;
-    line-height: 116px;
+    line-height: 50px;
 }
 
 
