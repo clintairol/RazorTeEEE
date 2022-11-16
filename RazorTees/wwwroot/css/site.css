@@ -48,7 +48,10 @@ a.navbar-brand {
     line-height: 68px;
     border: none;
 }
-
+div .background-home{
+    max-width: 100%;
+    padding: 0 0 0 0;
+}
 html {
     font-size: 14px;
 }
