@@ -48,10 +48,13 @@ a.navbar-brand {
     line-height: 68px;
     border: none;
 }
+
 div .background-home{
     max-width: 100%;
     padding: 0 0 0 0;
 }
+
+
 html {
     font-size: 14px;
 }
@@ -68,6 +71,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    min-height: 100vh;
+    background-image: linear-gradient(#ffffff99, #ffffff99), url(../lib/resources/pexels-aden-ardenrich-581339.jpg);
+    margin-bottom: 60px;
 }
 
