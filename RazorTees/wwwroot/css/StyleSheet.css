@@ -23,11 +23,37 @@ h1.apparel-header {
 }
 
 .add-item-Link {
-    margin-left: 1598px;
-    padding: 10px;
-    font-family: 'Times New Roman';
+    margin-left: 1550px;
+    padding-top: 8px;
+    padding-right: 50px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border: 0px;
+    position: absolute;
+    left: 20px;
+    top: 86px;
+    z-index: 1;
+    font-family: 'Inter';
     font-size: 40px;
     background-color: #256d85;
     color: white;
     border-radius: 0px 15px;
+    background-image: linear-gradient(to right,#0E5E6F,#3A8891);
+}
+
+.add-item-Link:hover {
+    background-image: linear-gradient(to right, #3A8891, #0E5E6F);
+}
+
+.circle-with-plus {
+    width: 60px;
+    height: 60px;
+    background-color: #256d85;
+    border-radius: 50%;
+    position:absolute;
+    left: 1800px;
+    top: 95px;
+    color: white;
+    font-size: 37px;
+    text-align: center;
 }
