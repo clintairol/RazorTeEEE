@@ -22,7 +22,12 @@ h1.apparel-header {
     color: #23828D;
 }
 
-p.add-item-position {
-    position: absolute;
-    left: 500px;
+.add-item-Link {
+    margin-left: 1598px;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    background-color: #256d85;
+    color: white;
+    border-radius: 0px 15px;
 }
