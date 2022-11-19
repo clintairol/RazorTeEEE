@@ -17,13 +17,15 @@ h1.apparel-header {
     font-weight: 700;
     font-size: 50px;
     line-height: 40px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
     color: #23828D;
+    padding-left: 80px;
+    padding-bottom: 25px;
 }
 
 .add-item-Link {
-    margin-left: 1060px;
+    margin-left: 1420px;
     padding-top: 8px;
     padding-right: 50px;
     padding-bottom: 8px;
@@ -51,12 +53,200 @@ h1.apparel-header {
     background-color: #3A8891;
     border-radius: 50%;
     position: absolute;
-    left: 1200px;
+    left: 1550px;
     top: 87px;
     color: white;
     font-size: 37px;
     text-align: center;
     z-index: 1;
     cursor: pointer;
+    bottom:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.card-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    .card:hover {
+        box-shadow: 0 0 50px #ccc;
+        transition-duration: .4s;
+    }
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.img-display {
     overflow: hidden;
+}
+
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+    .img-showcase img {
+        min-width: 100%;
+    }
+
+.product-content {
+    padding: 2rem 1rem;
+}
+
+.product-title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: white;
+    margin: 1rem 0;
+}
+
+    .product-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 80px;
+        background: ;
+    }
+
+.product-price {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+    .product-price span {
+        font-weight: 400;
+    }
+
+.new-price {
+    color: #fcc200;
+}
+
+.product-detail h2 {
+    text-transform: capitalize;
+    color: #ebebf3;
+    padding-bottom: 0.6rem;
+}
+.product-content {
+    background-color: #0E5E6F;
+}
+.product-detail ul {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+    .product-detail ul li {
+        margin: 0;
+        list-style: none;
+        padding-left: 1rem;
+        margin: 0.4rem 0;
+        font-weight: 600;
+        opacity: 0.9;
+        font-size: 1.2rem;
+        color: #ebebf3;
+    }
+
+        .product-detail ul li span {
+            font-weight: 400;
+        }
+
+
+@media screen and (min-width: 992px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        background-color: #0E5E6F;
+        border:0;
+    }
+
+    .card-wrapper {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .product-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-content {
+        padding-top: 0;
+    }
+}
+.about-item{
+    padding-bottom: 5rem;
+}
+hr{
+    color: white;
+    width: 480px;
+    height:3rem;
+    
+}
+
+.button-36 {
+    background-color: #0E5E6F;
+    border-radius: 8px;
+    margin: 9px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .button-36:hover {
+        box-shadow: white 0 1px 30px;
+        transition-duration: .2s;
+        background-color: white;
+        border-color: #0E5E6F;
+        color: #0E5E6F;
+    }
+
+@media (min-width: 500px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
+}
+#buttons .fa {
+    color: white;
+}
+#buttons:hover {
+    color: #0E5E6F;
 }
