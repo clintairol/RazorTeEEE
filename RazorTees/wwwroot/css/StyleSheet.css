@@ -1,4 +1,4 @@
-﻿h1.additem-header {
+﻿h1.additem-heafder {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -24,7 +24,7 @@ h1.apparel-header {
     padding-left: 80px;
     padding-bottom: 25px;
     position: absolute;
-    
+    z-index: 1;
 }
 
 .add-item-Link {
@@ -37,7 +37,7 @@ h1.apparel-header {
     position: absolute;
     left: 20px;
     top: 100px;
-    z-index: 3;
+    z-index: 1;
     font-family: 'Inter';
     font-size: 20px;
     background-color: #256d85;
@@ -57,11 +57,11 @@ h1.apparel-header {
     border-radius: 50%;
     position: absolute;
     left: 1550px;
-    top: 100px;
+    top: 95px;
     color: white;
     font-size: 37px;
     text-align: center;
-    z-index: 4;
+    z-index: 2;
     cursor: pointer;
     bottom:0;
 }
@@ -82,6 +82,7 @@ body {
 .card-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding:1rem;
 }
 .card:hover {
     box-shadow: 0 0 50px #877d6d;
@@ -112,9 +113,9 @@ img {
 }
 
 .product-title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 690px;
     position: relative;
     color: white;
     margin: 1rem 0;
@@ -127,7 +128,7 @@ img {
         bottom: 0;
         height: 4px;
         width: 80px;
-        background: ;
+        background: white;
     }
 
 .product-price {
@@ -180,6 +181,8 @@ img {
         grid-gap: 1.5rem;
         background-color: #0E5E6F;
         border:0;
+        top: 90px;
+        bottom: 90px;
     }
 
     .card-wrapper {
@@ -187,7 +190,9 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        padding-bottom: 20px;
+        padding-top: 20px;
+        z-index:1;
     }
 
     .product-imgs {
@@ -254,3 +259,8 @@ hr{
 #buttons:hover .fa{
     color: #0E5E6F;
 }
+#button1:hover .fa{
+    color: #0E5E6F;
+}
+
+

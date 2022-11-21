@@ -112,6 +112,8 @@ footer .container {
     font-weight: 600;
     font-size: 20px;
     background-image: linear-gradient(to right, #3A8891, #0E5E6F);
+    position: absolute;
+    width:100%;
 }
 
 html {
