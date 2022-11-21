@@ -44,7 +44,7 @@
           
 
           <div class = "product-price">
-            <p class = "new-price"><span>₱</span>@Html.DisplayFor(modelItem => item.Price)</p>
+            <p class = "new-price"><span>₱ </span>@Html.DisplayFor(modelItem => item.Price).00</p>
             
           </div>
           <hr>
@@ -61,8 +61,8 @@
               <li>Material: <span>@Html.DisplayFor(modelItem => item.Material)</span></li> 
             </ul>
           </div>
-          <div id="buttons">
-              <a asp-page="./Edit" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-pencil-square-o"></i>  Edit</button></a> 
+          <div class="buttons">
+              <a asp-page="./Edit" asp-route-id="@item.ID"><button class="button-36" role="button"><i class="fa fa-pencil-square-o"></i>  Edit</button></a> 
               <a asp-page="./Details" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-file-text"></i>  Details</button></a> 
               <a asp-page="./Delete" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-trash"></i>  Delete</button></a> 
           </div>
