@@ -11,18 +11,19 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - RazorTees</title>
-        <link rel="stylesheet" href="~/css/Fonts.css" />
+        <link rel="stylesheet" href="~/css/Fonts.css"/>
         <link rel="stylesheet" href="~/css/EditPage.css"/>
 </head>
-<div class="container">
+<div class="background-home">
+    <img class="bg_home" src="~/lib/resources/bg1.jpg" />
+</div>
+<div class="container-wrap">
     <h1>Edit Item</h1>
-    <h4>Tees</h4>
-    <hr />
     <div class="row">
-        <div class="col-md-4">
-            <form method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="Tees.ID" />
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Tees.ID" />
+            <div class="details">
                 <div class="form-group">
                     <label asp-for="Tees.Quantity" class="control-label"></label>
                     <input asp-for="Tees.Quantity" class="form-control" />
@@ -73,14 +74,16 @@
                     <input asp-for="Tees.Date" class="form-control" />
                     <span asp-validation-for="Tees.Date" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-primary" />
-                </div>
-            </form>
-        </div>
-    </div>
-    <div>
-        <a asp-page="./Index">Back to List</a>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ADD ITEM" class="btn-primary" />
+            </div>
+            <div class="return-back">
+                <a asp-page="./Index">Back to List</a>
+            </div>
+        </form>
+
+
     </div>
 </div>
 

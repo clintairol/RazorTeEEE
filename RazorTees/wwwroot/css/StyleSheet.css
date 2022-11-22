@@ -1,4 +1,10 @@
-﻿h1.additem-heafder {
+﻿.container-header{
+   margin-top: 50px;
+}
+
+
+
+h1.additem-heafder {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -36,7 +42,7 @@ h1.apparel-header {
     border: 0px;
     position: absolute;
     left: 20px;
-    top: 100px;
+    top: 150px;
     z-index: 1;
     font-family: 'Inter';
     font-size: 20px;
@@ -57,7 +63,7 @@ h1.apparel-header {
     border-radius: 50%;
     position: absolute;
     left: 1550px;
-    top: 95px;
+    top: 145px;
     color: white;
     font-size: 37px;
     text-align: center;

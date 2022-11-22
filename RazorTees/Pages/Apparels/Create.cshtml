@@ -4,75 +4,83 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1 class="additem-header">Add Item</h1>
-
-<h4 class="h4Tees"as">Tees</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Tees.Quantity" class="control-label"></label>
-                <input asp-for="Tees.Quantity" class="form-control" />
-                <span asp-validation-for="Tees.Quantity" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Product" class="control-label"></label>
-                <input asp-for="Tees.Product" class="form-control" />
-                <span asp-validation-for="Tees.Product" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Brand" class="control-label"></label>
-                <input asp-for="Tees.Brand" class="form-control" />
-                <span asp-validation-for="Tees.Brand" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Color" class="control-label"></label>
-                <input asp-for="Tees.Color" class="form-control" />
-                <span asp-validation-for="Tees.Color" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Design" class="control-label"></label>
-                <input asp-for="Tees.Design" class="form-control" />
-                <span asp-validation-for="Tees.Design" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Sizes" class="control-label"></label>
-                <input asp-for="Tees.Sizes" class="form-control" />
-                <span asp-validation-for="Tees.Sizes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Neckline" class="control-label"></label>
-                <input asp-for="Tees.Neckline" class="form-control" />
-                <span asp-validation-for="Tees.Neckline" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Material" class="control-label"></label>
-                <input asp-for="Tees.Material" class="form-control" />
-                <span asp-validation-for="Tees.Material" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Price" class="control-label"></label>
-                <input asp-for="Tees.Price" class="form-control" />
-                <span asp-validation-for="Tees.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tees.Date" class="control-label"></label>
-                <input asp-for="Tees.Date" class="form-control" />
-                <span asp-validation-for="Tees.Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RazorTees</title>
+    <link rel="stylesheet" href="~/css/Fonts.css" />
+    <link rel="stylesheet" href="~/css/EditPage.css" />
+</head>
+<div class="background-home">
+    <img class="bg_home" src="~/lib/resources/bg1.jpg" />
 </div>
-
-<div>
-    <br> </br> 
-    <a asp-page="Index">Back to List</a>
+<div class="container-wrap">
+    <h1>Add Item</h1>
+    <div class="row">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+               <div class="details">
+                    <div class="form-group">
+                        <label asp-for="Tees.Quantity" class="control-label"></label>
+                        <input asp-for="Tees.Quantity" class="form-control" />
+                        <span asp-validation-for="Tees.Quantity" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Product" class="control-label"></label>
+                        <input asp-for="Tees.Product" class="form-control" />
+                        <span asp-validation-for="Tees.Product" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Brand" class="control-label"></label>
+                        <input asp-for="Tees.Brand" class="form-control" />
+                        <span asp-validation-for="Tees.Brand" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Color" class="control-label"></label>
+                        <input asp-for="Tees.Color" class="form-control" />
+                        <span asp-validation-for="Tees.Color" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Design" class="control-label"></label>
+                        <input asp-for="Tees.Design" class="form-control" />
+                        <span asp-validation-for="Tees.Design" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Sizes" class="control-label"></label>
+                        <input asp-for="Tees.Sizes" class="form-control" />
+                        <span asp-validation-for="Tees.Sizes" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Neckline" class="control-label"></label>
+                        <input asp-for="Tees.Neckline" class="form-control" />
+                        <span asp-validation-for="Tees.Neckline" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Material" class="control-label"></label>
+                        <input asp-for="Tees.Material" class="form-control" />
+                        <span asp-validation-for="Tees.Material" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Price" class="control-label"></label>
+                        <input asp-for="Tees.Price" class="form-control" />
+                        <span asp-validation-for="Tees.Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tees.Date" class="control-label"></label>
+                        <input asp-for="Tees.Date" class="form-control" />
+                        <span asp-validation-for="Tees.Date" class="text-danger"></span>
+                    </div>
+               </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn-primary" />
+                </div>
+                <div class="return-back">
+                    <a asp-page="Index">Back to List</a>
+                </div>
+            </form>
+    </div>
 </div>
 
 @section Scripts {
