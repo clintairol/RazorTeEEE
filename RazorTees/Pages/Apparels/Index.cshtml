@@ -16,8 +16,6 @@
 
 <div class="container">
     <h1 class="apparel-header">My Items</h1>
-
-
     <a asp-page="Create"><span class="add-item-Link">Add Items</span></a>
 <p class="circle-with-plus">+</p>
 </div>
@@ -59,6 +57,7 @@
               <li>Design: <span>@Html.DisplayFor(modelItem => item.Design)</span></li>
               <li>Neckline: <span>@Html.DisplayFor(modelItem => item.Neckline)</span></li>
               <li>Material: <span>@Html.DisplayFor(modelItem => item.Material)</span></li> 
+              <li>Date Created: <span>@Html.DisplayFor(modelItem => item.Date)</span></li> 
             </ul>
           </div>
           <div class="buttons">
