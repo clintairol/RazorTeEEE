@@ -16,8 +16,10 @@
 
 <div class="container">
     <h1 class="apparel-header">My Items</h1>
+
+
     <a asp-page="Create"><span class="add-item-Link">Add Items</span></a>
-<p class="circle-with-plus">+</p>
+    <p class="circle-with-plus">+</p>
 </div>
 
 @foreach (var item in Model.Tees) {
@@ -30,6 +32,7 @@
           <div class = "img-display">
             <div class = "img-showcase">
               <img src = "~/lib/resources/tshirt-img.PNG" alt = "shirt image">
+              
             </div>
           </div>
           
@@ -42,7 +45,7 @@
           
 
           <div class = "product-price">
-            <p class = "new-price"><span>₱ </span>@Html.DisplayFor(modelItem => item.Price).00</p>
+            <p class = "new-price"><span>₱</span>@Html.DisplayFor(modelItem => item.Price)</p>
             
           </div>
           <hr>
@@ -57,18 +60,17 @@
               <li>Design: <span>@Html.DisplayFor(modelItem => item.Design)</span></li>
               <li>Neckline: <span>@Html.DisplayFor(modelItem => item.Neckline)</span></li>
               <li>Material: <span>@Html.DisplayFor(modelItem => item.Material)</span></li> 
-              <li>Date Created: <span>@Html.DisplayFor(modelItem => item.Date)</span></li> 
             </ul>
           </div>
-          <div class="buttons">
-              <a asp-page="./Edit" asp-route-id="@item.ID"><button class="button-36" role="button"><i class="fa fa-pencil-square-o"></i>  Edit</button></a> 
+          <div id="buttons">
+              <a asp-page="./Edit" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-pencil-square-o"></i>  Edit</button></a> 
               <a asp-page="./Details" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-file-text"></i>  Details</button></a> 
               <a asp-page="./Delete" asp-route-id="@item.ID" ><button class="button-36" role="button"><i class="fa fa-trash"></i>  Delete</button></a> 
           </div>
         </div>
       </div>
     </div>
-        
+
     <script src="script1.js"></script>
   </body>
-  }
+ }
