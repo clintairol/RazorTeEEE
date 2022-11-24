@@ -4,6 +4,12 @@ body {
     background-color: #dbd8d2;
 }
 
+div .text-center{
+    max-width: 100vh; 
+    background-image: url('../lib/resources/depositphotos_206873850-stock-photo-fashion-clothing-style-trends-clothes 1.png')
+}
+
+
 /*useful for fit-to-screen*/
 .container{
     max-width: 100%;
@@ -96,6 +102,10 @@ a:hover:after{
     
 }
 
+section .homepage{
+    min-height: 100vh;
+    background: url('../lib/resources/pexels-aden-ardenrich-581339 (1).jpg');
+}
 
 .background-home .bg_home{
     max-width: 100%;

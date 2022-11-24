@@ -1,0 +1,15 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+
+section .homepage {
+    background-image: url('../lib/resources/depositphotos_206873850-stock-photo-fashion-clothing-style-trends-clothes 1.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+.text-center {
+    display: flex;
+    
+}

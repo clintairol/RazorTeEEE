@@ -4,17 +4,27 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="background-home">
-   <img class= "bg_home" src="~/lib/resources/bg1.jpg"/>
-</div>
-<div class="text-center">
-    <div class= "wrapper-home">
-        <p class="display-4">Welcome to <span style="color: #3A8891;">RazorTeezy</span></p>
-        <h1>ADMIN PAGE</h1>
-        <div class="button-wrap">
-            <a class="button" asp-area="" asp-page="/Apparels/Index">Apparels</a>
+<head>
+    <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<section class="homepage">
+    <div class="text-center">
+        <div class= "wrapper-home">
+            <p class="display-4">Welcome to <span style="color: #3A8891;">RazorTeezy</span></p>
+            <h1>ADMIN PAGE</h1>
+            <div class="button-wrap">
+                <a class="button" asp-area="" asp-page="/Apparels/Index">Apparels</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
 
 
